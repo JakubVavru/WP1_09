@@ -17,9 +17,19 @@ Máš <?= $hp ?> bodů zdraví.
 
 do {
     $dmg = rand(max_dmg, min_dmg); 
-    $hp = $hp - $dmg?>
+    $hp = $hp - $dmg;
+    
+    if ($hp <= -1) {
+        $hp = 0;
+    }
+    
+    ?>
 <br>Utrpěl si <?= $dmg ?> bodů poškození zbývá ti <?= $hp ?> <?php
-} while ($hp >= 0); ?>
+
+
+
+
+} while ($hp > 0); ?>
 <h1>Game over</h1>
 
 
