@@ -24,7 +24,7 @@ do {
     }
     
     ?>
-<br>Utrpěl si <?= $dmg ?> bodů poškození zbývá ti <?= $hp ?> <?php
+<br>Utrpěl si <?= $dmg ?> bodů poškození zbývá ti <?= $hp ?> HP <?php
 
 
 
